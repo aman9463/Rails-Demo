@@ -1,0 +1,28 @@
+<style type="text/css">
+    .container{
+        padding: 20px;
+    }
+</style>
+<div class="container">
+
+    <% if user_signed_in? %> 
+    <div class="form-control">
+        Name: <%=current_user.first_name%> <%=current_user.last_name%> 
+    </div>
+    <div class="form-control">
+
+        Email: <%=current_user.email%> 
+    </div>
+    <div class="form-control">
+
+        Mobile Number: <%=current_user.mobile_number%>
+    </div>
+    <div class="form-control">
+
+        Profile Image Medium<br>
+        <%= image_tag (current_user.avatar(:medium))%>
+    </div>
+    <% end %>
+
+
+</div>
