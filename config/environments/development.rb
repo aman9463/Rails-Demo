@@ -56,7 +56,7 @@ Rails.application.configure do
 
     Rails.application.config.middleware.use ExceptionNotification::Rack,
   :slack => {
-    :webhook_url => "https://hooks.slack.com/services/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",
+    :webhook_url => "web hook url",
     :channel => "#testing",
     :additional_parameters => {
       :mrkdwn => true
