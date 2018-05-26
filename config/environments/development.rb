@@ -63,4 +63,12 @@ Rails.application.configure do
     },
   }
 
+    Rails.application.config.middleware.use ExceptionNotification::Rack,
+  :ignore_if => ->(env, exception) { exception.message =~ /^undefined method `include?' for nil:NilClass/ },
+  :email => {
+     :deliver_with => :deliver,
+     :email_prefix => "[Rails Demo 500 Error] ",
+     :sender_address => %{'Rails Demo' <your email address>},
+     :exception_recipients => %w{receipient emial address}
+   }
 end
