@@ -12366,3 +12366,237 @@ Started GET "/" for ::1 at 2018-05-20 23:29:04 +0530
 Processing by Users::CustomController#home as HTML
   Rendered users/custom/home.html.erb within layouts/application (34.9ms)
 Completed 200 OK in 74ms (Views: 73.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-05-25 18:26:08 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (85.2ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+
+ActionController::RoutingError (undefined local variable or method `err' for ApplicationController:Class):
+  app/controllers/application_controller.rb:15:in `<class:ApplicationController>'
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/users/custom_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (38.2ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (14.3ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (240.8ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (274.7ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (428.4ms)
+
+
+Started GET "/" for ::1 at 2018-05-25 18:26:27 +0530
+Processing by Users::CustomController#home as HTML
+  Rendered users/custom/home.html.erb within layouts/application (37.0ms)
+Completed 200 OK in 6713ms (Views: 6713.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2018-05-25 18:26:34 +0530
+
+
+Started GET "/assets/turbolinks.self-2db6ec539b9190f75e1d477b305df53d12904d5cafdd47c7ffd91ba25cbec128.js?body=1" for ::1 at 2018-05-25 18:26:34 +0530
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2018-05-25 18:26:34 +0530
+
+
+Started GET "/assets/application_bootstrap.self-bf630d2ff82cad0802b95e479e88408492a466747f6fc2cb0165de2e4a2c6814.css?body=1" for ::1 at 2018-05-25 18:26:34 +0530
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2018-05-25 18:26:34 +0530
+
+
+Started GET "/assets/bootstrap.self-caa553aa02de69210205232e653f3ed1142f1fdca642375ae6b26a891d3eaacd.js?body=1" for ::1 at 2018-05-25 18:26:34 +0530
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2018-05-25 18:26:34 +0530
+
+
+Started GET "/" for ::1 at 2018-05-25 18:26:51 +0530
+Processing by Users::CustomController#home as HTML
+  Rendered users/custom/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 41ms (Views: 40.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2018-05-25 18:27:03 +0530
+Processing by Users::CustomController#home as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `first' for nil:NilClass):
+  app/controllers/users/custom_controller.rb:6:in `home'
+
+
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.7ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.8ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.3ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (147.3ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (106.9ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (243.9ms)
+
+
+Started GET "/" for ::1 at 2018-05-25 18:27:39 +0530
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Users::CustomController#home as HTML
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `first' for nil:NilClass):
+  app/controllers/users/custom_controller.rb:6:in `home'
+
+
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.8ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (123.6ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.4ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (126.7ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (272.2ms)
+
+
+Started GET "/" for ::1 at 2018-05-25 18:27:41 +0530
+Processing by Users::CustomController#home as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `first' for nil:NilClass):
+  app/controllers/users/custom_controller.rb:6:in `home'
+
+
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.9ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (125.2ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (111.1ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (242.1ms)
+
+
+Started GET "/" for ::1 at 2018-05-25 18:27:42 +0530
+Processing by Users::CustomController#home as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `first' for nil:NilClass):
+  app/controllers/users/custom_controller.rb:6:in `home'
+
+
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.2ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (117.9ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (99.1ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (223.1ms)
+
+
+Started GET "/" for ::1 at 2018-05-25 18:27:43 +0530
+Processing by Users::CustomController#home as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `first' for nil:NilClass):
+  app/controllers/users/custom_controller.rb:6:in `home'
+
+
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.2ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (118.6ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (100.8ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (230.5ms)
+
+
+Started GET "/" for ::1 at 2018-05-25 18:27:44 +0530
+Processing by Users::CustomController#home as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `first' for nil:NilClass):
+  app/controllers/users/custom_controller.rb:6:in `home'
+
+
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.9ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (121.0ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (117.8ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (258.2ms)
+
+
+Started GET "/" for ::1 at 2018-05-25 18:27:45 +0530
+Processing by Users::CustomController#home as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `first' for nil:NilClass):
+  app/controllers/users/custom_controller.rb:6:in `home'
+
+
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.4ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.2ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (127.0ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (123.9ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (270.8ms)
+
+
+Started GET "/" for ::1 at 2018-05-25 18:27:46 +0530
+Processing by Users::CustomController#home as HTML
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `first' for nil:NilClass):
+  app/controllers/users/custom_controller.rb:6:in `home'
+
+
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.0ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (114.8ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (120.2ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/aman/.rvm/gems/ruby-2.3.1@4.2.6/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (257.8ms)

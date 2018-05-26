@@ -52,4 +52,15 @@ Rails.application.configure do
     password: 'pws',
     authentication: :plain
   }
+
+
+    Rails.application.config.middleware.use ExceptionNotification::Rack,
+  :slack => {
+    :webhook_url => "https://hooks.slack.com/services/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",
+    :channel => "#testing",
+    :additional_parameters => {
+      :mrkdwn => true
+    },
+  }
+
 end

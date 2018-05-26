@@ -3,7 +3,7 @@ class Users::CustomController < ApplicationController
     :user
   end
 def home
-	
+	@error.first
 end
 
 end
